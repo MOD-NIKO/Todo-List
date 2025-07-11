@@ -1,23 +1,31 @@
+/* Global Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
-  text-align: center;
   margin: 0;
-  padding: 50px 20px;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
+/* Title */
 h1 {
   color: #333;
   margin-bottom: 20px;
+  font-size: 2em;
 }
 
+/* Input & Buttons */
 input {
   padding: 12px;
-  width: 60%;
+  width: 100%;
   max-width: 300px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  margin-bottom: 10px;
   outline: none;
+  box-sizing: border-box;
   transition: 0.3s;
 }
 
@@ -36,12 +44,14 @@ button {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  width: auto;
 }
 
 button:hover {
   background-color: #357ABD;
 }
 
+/* Task List */
 ul {
   list-style: none;
   padding: 0;
@@ -49,6 +59,8 @@ ul {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 li {
@@ -72,4 +84,20 @@ li:hover {
   color: gray;
   opacity: 0.6;
   background-color: #e6f0ff;
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input, button {
+    width: 90%;
+    max-width: none;
+  }
+
+  ul {
+    padding: 0 10px;
+  }
 }
