@@ -8,7 +8,7 @@ This is a simple to-do list web app built with HTML, CSS, and JavaScript.
 - Clean UI
 
 ## Demo
-Live site: [https://MOD-NIKO.github.io/todo-list](https://MOD-NIKO.github.io/todo-list) 
+Live site: [MOD-NIKO DEMO](https://mod-niko.github.io/Todo-List/) 
 
 ## License
 [MIT](LICENSE)
